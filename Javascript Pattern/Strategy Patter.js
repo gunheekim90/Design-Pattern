@@ -91,6 +91,7 @@ var data = {
     age: "unknown",
     username: "o_O"
 };
+
 validator.validate(data);
 if (validator.hasErrors()) {
 	//join method can make a String with Array

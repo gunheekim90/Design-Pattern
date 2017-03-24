@@ -32,7 +32,6 @@ Sale.decorators.money = {
 	}
 }
 
-
 Sale.prototype.decorate = function(decorator){
 	var F = function(){},
 	overrides = this.constructor.decorators[decorator],
@@ -48,7 +47,6 @@ Sale.prototype.decorate = function(decorator){
 	console.log(newobj);
 	return newobj;
 }
-
 
 var sale = new Sale(100);
 sale = sale.decorate('fedtax');
